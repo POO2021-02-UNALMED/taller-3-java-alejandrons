@@ -51,7 +51,10 @@ public class Control {
     }
     public void setCanal(int canal) {
         if(tv.getEstado()){
+            if(canal>=1 && canal<=120){
             tv.setCanal(canal);
+        }
+            
         }
     }
     
