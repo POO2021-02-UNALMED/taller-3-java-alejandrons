@@ -9,6 +9,7 @@ public class Control {
     public void enlazar(TV tv){
         
         this.tv = tv;
+        tv.setControl(this);
         
     }
 
@@ -28,20 +29,30 @@ public class Control {
     }
     
     public void canalUp(){
-        tv.canalUp();
+        if(tv.getEstado()){
+            tv.canalUp();
+        }
     }
     public void canalDown(){
-        tv.canalDown();
+        if(tv.getEstado()){
+            tv.canalDown();
+        }
     }
     
     public void volumenUp(){
-        tv.volumenUp();
+        if(tv.getEstado()){
+            tv.volumenUp();
+        }
         }
     public void volumenDown(){
-        tv.volumenDown();
+        if(tv.getEstado()){
+            tv.volumenDown();
+        }
     }
     public void setCanal(int canal) {
-        tv.setCanal(canal);
+        if(tv.getEstado()){
+            tv.setCanal(canal);
+        }
     }
     
 }
