@@ -35,6 +35,7 @@ public class TV {
             if(canal>=1 && canal<=120){
             this.canal = canal;
         }
+        }
     }
 
     public int getPrecio() {
